@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="rm_decision" type="auto_fms" name="" output="screen" >>
+      <rosparam file="$(find rm_bringup)/config/auto_fms.yaml" command="load"  />
+  </node>
+
+</launch>

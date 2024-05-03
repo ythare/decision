@@ -1,0 +1,38 @@
+<launch>
+    <!-- Run the local trajectory planner -->
+    <node pkg="rm_decision" type="referee_system" name="" respawn="true" output="screen" >
+        <param name="Blue1_HP" value="100"/>
+        <param name="Blue2_HP" value="100"/>
+        <param name="Blue3_HP" value="100"/>
+        <param name="Blue4_HP" value="100"/>
+        <param name="Blue5_HP" value="100"/>
+        <param name="Blue7_HP" value="400"/>
+        <param name="Blue_Base_HP" value="100"/>
+        <param name="Blue_Outpost_HP" value="1500"/>
+
+        <param name="Red1_HP" value="100"/>
+        <param name="Red2_HP" value="100"/>
+        <param name="Red3_HP" value="100"/>
+        <param name="Red4_HP" value="100"/>
+        <param name="Red5_HP" value="100"/>
+        <param name="Red7_HP" value="400"/>
+        <param name="Red_Base_HP" value="100"/>
+        <param name="Red_Outpost_HP" value="1500"/>
+
+        <param name="plan" value="3"/>
+
+        <param name="armor_id" value="0"/>
+        <!--self 0:blue -->
+        <param name="self_color" value="0"/>
+        <param name="enemy_dist" value="0.0"/>
+        <param name="yaw" value="0.0"/>
+        <param name="Game_state" value="4"/>
+        <param name="Game_remain_time" value="420"/>
+        <param name="remain_gold" value="200"/>
+        <param name="projectile_allowance_17mm" value="100"/>
+        <param name="find_flag" value="0"/>
+
+        <param name="serial_open" value="1"/>
+    </node>
+
+</launch>
